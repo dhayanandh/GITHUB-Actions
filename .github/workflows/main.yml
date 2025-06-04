@@ -4,12 +4,9 @@ jobs:
   send-mail:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
     - name: Send mail
       if: ${{ always() }} 
-      uses: devellany/send-mailer@v1.0.2
+      uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.google.com
         # Optional port (defaults to 465)
