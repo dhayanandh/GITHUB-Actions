@@ -10,18 +10,18 @@ jobs:
     - name: Send mail
       if: ${{ always() }} 
       uses: devellany/send-mailer@v1.0.2
-         with:
-            server_address: smtp.google.com
-            # Optional port (defaults to 465)
-            server_port: 465
-            username: ${{secrets_ACCOUNT}}
-            password: ${{secrets_MAIL_PASSWORD}}
-            sender: Dhaya
-            from: ${{secrets.MAIL_ADDRESS}}
-            to: dhayanandh@gmail.com
-            subject: mail title.
-            body: your messages.
-            # Optional content type (defaults to text/plain)
-            contentType: text/plain
-            # Optional attachment files (JSON type. require property 'path')
-            attachments: '[{"path":"README.md"}]'
+      with:
+        server_address: smtp.google.com
+        # Optional port (defaults to 465)
+        server_port: 465
+        username: ${{secrets_ACCOUNT}}
+        password: ${{secrets_MAIL_PASSWORD}}
+        sender: Dhaya
+        from: ${{secrets.MAIL_ADDRESS}}
+        to: dhayanandh@gmail.com
+        subject: mail title.
+        body: your messages.
+        # Optional content type (defaults to text/plain)
+        contentType: text/plain
+        # Optional attachment files (JSON type. require property 'path')
+        attachments: '[{"path":"README.md"}]'
