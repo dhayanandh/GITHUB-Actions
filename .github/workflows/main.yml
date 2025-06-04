@@ -14,10 +14,10 @@ jobs:
         server_address: smtp.google.com
         # Optional port (defaults to 465)
         server_port: 465
-        username: ${{secrets_ACCOUNT}}
-        password: ${{secrets_MAIL_PASSWORD}}
+        username: ${{SECRETS_ACCOUNT}}
+        password: ${{SECRETS_MAIL_PASSWORD}}
         sender: Dhaya
-        from: ${{secrets.MAIL_ADDRESS}}
+        from: ${{SECRETS_ACCOUNT}}
         to: dhayanandh@gmail.com
         subject: mail title.
         body: your messages.
