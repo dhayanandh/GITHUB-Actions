@@ -1,0 +1,9 @@
+name: test
+on: push
+jobs:
+  git-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: echo "hello world"
+  
