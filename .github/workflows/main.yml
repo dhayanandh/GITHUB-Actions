@@ -17,7 +17,7 @@ jobs:
         username: ${{ SECRETS.EMAIL_ACCOUNT }}
         password: ${{ SECRETS.EMAIL_PASSWORD }}
         sender: Dhaya
-        from: ${{ SECRETS_ACCOUNT }}
+        from: ${{ SECRETS.EMAIL_ACCOUNT }}
         to: dhayanandh@gmail.com
         subject: mail title.
         body: your messages.
